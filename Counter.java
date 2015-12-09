@@ -22,7 +22,7 @@ public class Counter  {
 	}
 /*=======================================================================================================*/
 	public static HashSet<String> wordStop(String comodines){
-		HashSet<String> set = new HashSet<>();
+		HashSet<String> set = new HashSet<String>();
 		
 		try{
 			Scanner sc = new Scanner(new File(comodines));
@@ -41,7 +41,7 @@ public class Counter  {
 	}
 	/*====================================================================================*/
 	public static void counter(String file,String args1){
-		HashMap<String,Integer> words = new HashMap<>();
+		HashMap<String,Integer> words = new HashMap<String,Integer>();
 		Scanner sc ;
 
 				
@@ -69,7 +69,7 @@ public class Counter  {
 			System.out.println("No se encontro el fichero: " + file);
 		}
 		
-		List<Element> list = new ArrayList<>();
+		List<Element> list = new ArrayList<Element>();
 		
 		for(String word:words.keySet()){
 			Integer c = words.get(word);
